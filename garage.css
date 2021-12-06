@@ -151,6 +151,8 @@ a.button{
    border: 1px solid white;
    padding: 11px 25px ;
    font-family: 'Playfair Display', serif ;
+   display: inline-block;
+   position: relative;
  }
 
 
@@ -170,8 +172,12 @@ a.button{
  }
 
  .button:hover{
-     background-color: green;
-     transition-duration: 1s;
+    
+  background: #03e9f4;
+  color: #050801;
+  text-shadow: 0 0 20px #fff, 0 0 30px #03e9f4, 0 0 40px #03e9f4, 0 0 50px #03e9f4, 0 0 60px #03e9f4, 0 0 70px #03e9f4, 0 0 80px #03e9f4;
+  box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4, 0 0 200px #03e9f4;
+  -webkit-box-reflect: below 1% linear-gradient(transparent, #0005);
      
  }
 
@@ -180,4 +186,38 @@ a.button{
      font-size: .8rem;
      padding-left: 30px;
  }
+
+ .dropdown{
+     display: none;
+     position: absolute;
+     z-index: 1;
+     padding-top: 20px;
+    text-align: center;
+    
+     
+ }
+ .navbutton:hover .dropdown{
+     display: block;
+     
+ }
+
+ .dropdown .navbutton {
+     width: 120px;
+     background-color: white;
+
+ }
+
+ .dropdown .navbutton a{
+     color:#fa4063;
+     font-family:  'Playfair Display', serif;
+ }
+
+
+ .dropdown .navbutton:hover{
+     background-color: #03e9f4;
+     transition-duration: 0.3s;
+ }
+
+
+ 
 
