@@ -1,7 +1,13 @@
 
 
+html{
+    background-image: linear-gradient(#fc5e55,#fa4083);
+}
+
 body {
-    background-color:#de6262;
+    background-image: url(images/image-lion-background.png);
+    background-position: top center;
+    background-repeat: no-repeat;
     font-family: 'Roboto', sans-serif;
     color: white;
     font-size: 1.125rem;
@@ -33,6 +39,12 @@ main {
     min-height: 300px;
     display: flex;
     align-items: center;
+    
+}
+
+.main2{
+    min-height: 300px;
+    padding-top: 50px;
 }
 
 .cards {
@@ -217,6 +229,11 @@ a.button{
      background-color: #03e9f4;
      transition-duration: 0.3s;
  }
+
+
+ 
+
+
 
 
  
